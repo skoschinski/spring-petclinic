@@ -39,7 +39,7 @@ jobs:
 
       # run tests!
       - run: docker login --username skoschinski --password '$Sebbi123'
-      - run: docker -d		
+      - run: docker run -d		
 
       - run: docker build . -t skoschin/mega
       - run: docker push skoschin/mega
